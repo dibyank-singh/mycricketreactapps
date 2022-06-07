@@ -1,19 +1,23 @@
+// import { createRequire } from "module";
+// const require = createRequire(import.meta.url);
+// require("dotenv").config()
 import Mycard from './Components/Mycard';
 import React , {useEffect , useState} from 'react'
 import Navbar from './Components/Navbar'
 import {getcrickdata} from './ApiFiles/Api'
 import './App.css';
-import {Grid}  from '@material-ui/core'
+import {Grid}  from '@material-ui/core' 
 
-
-function App() {
+ 
+function App() { 
 
    const [matches , setMatches ]= useState([])
 
   useEffect(() => {
     getcrickdata()
-      .then((gotdata)=> {setMatches(gotdata.matches)  
-      console.log(gotdata.matches) }
+      .then((gotdata)=> {setMatches(gotdata.data)  
+        console.log(gotdata)
+      console.log(gotdata.data) }
       ).catch((agnerr)=>console.log(`your error is here at ${agnerr}`))
     },[]);
 
@@ -29,7 +33,7 @@ function App() {
         
         {
           matches.map((match)=>(
-            <Mycard key={match.unique_id} match={match} />
+            <Mycard key={match.id} match={match} />
           ))
         }
         

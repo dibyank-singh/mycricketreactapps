@@ -29,7 +29,7 @@ const Mycard = ({match}) => {
 
            <Grid  container justify="center" spacing={4} alignItems="center" >
                <Grid item >
-                 <Typography variant="h6">{match["team-1"]} </Typography>
+                 <Typography variant="h6">{match.teams[0]} </Typography>
                </Grid>
                <Grid item >
                
@@ -44,7 +44,7 @@ const Mycard = ({match}) => {
 
                </Grid>
                <Grid item >
-               <Typography variant="h6">{match["team-2"]} </Typography>
+               <Typography variant="h6">{match.teams[1]} </Typography>
                </Grid>
 
            </Grid>
@@ -53,7 +53,7 @@ const Mycard = ({match}) => {
        <CardActions>
           <Grid container  justify="center" >
               <Grid item>
-              <Button onClick={()=>{Clickevent(match.unique_id)}} item  style={{marginRight:20}} variant="contained" color="primary">
+              <Button onClick={()=>{Clickevent(match.id)}} item  style={{marginRight:20}} variant="contained" color="primary">
                Show Dtails
             </Button>
            <Button item  variant="contained" color="primary">
@@ -91,8 +91,8 @@ const Mycard = ({match}) => {
             <DialogContent>
                 <DialogContentText id="alert-dialog-discription">
 
-                    <Typography> {matchdetails.stat? true:""}</Typography>
-                    <Typography> Match <span style={{fontWeight:40}}>{matchdetails.matchStarted? "started":"Still not started"}</span> </Typography>
+                    <Typography> {matchdetails.hasSquad? true:""}</Typography>
+                    <Typography> Match <span style={{fontWeight:40}}>{matchdetails.status? "started":"Still not started"}</span> </Typography>
                     <Typography > Score <span> {matchdetails.score}</span></Typography>
                 </DialogContentText>
             </DialogContent>
