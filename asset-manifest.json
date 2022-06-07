@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mycricketreactapps/static/css/main.4a9244a1.chunk.css",
-    "main.js": "/mycricketreactapps/static/js/main.820adb0d.chunk.js",
-    "main.js.map": "/mycricketreactapps/static/js/main.820adb0d.chunk.js.map",
+    "main.js": "/mycricketreactapps/static/js/main.70053ed9.chunk.js",
+    "main.js.map": "/mycricketreactapps/static/js/main.70053ed9.chunk.js.map",
     "runtime-main.js": "/mycricketreactapps/static/js/runtime-main.eb9f8369.js",
     "runtime-main.js.map": "/mycricketreactapps/static/js/runtime-main.eb9f8369.js.map",
     "static/js/2.9ad02bdb.chunk.js": "/mycricketreactapps/static/js/2.9ad02bdb.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.eb9f8369.js",
     "static/js/2.9ad02bdb.chunk.js",
     "static/css/main.4a9244a1.chunk.css",
-    "static/js/main.820adb0d.chunk.js"
+    "static/js/main.70053ed9.chunk.js"
   ]
 }
